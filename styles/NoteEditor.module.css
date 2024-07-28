@@ -1,0 +1,50 @@
+/* styles/NoteEditor.module.css */
+.noteEditorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    height: calc(100vh - 70px); /* adjust based on header height */
+  }
+  
+  .upperText {
+    margin-bottom: 20px;
+    color: #4267b2;
+  }
+  
+  .inputForm {
+    width: 80%;
+    height: 70%;
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .review {
+    background-color: #28a745;
+  }
+  
+  .cancel {
+    background-color: #dc3545;
+  }
+  

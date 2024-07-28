@@ -1,32 +1,15 @@
-import styled from 'styled-components';
-
-const GridContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-`;
-
-const TemplateBox = styled.div`
-  width: 150px;
-  height: 200px;
-  background-color: white;
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ccc;
-`;
+import React from 'react';
+import styles from '../styles/TemplateGrid.module.css';
 
 const TemplateGrid: React.FC = () => (
-  <GridContainer>
-    <TemplateBox>Template 1</TemplateBox>
-    <TemplateBox>Template 1</TemplateBox>
-    <TemplateBox>Template 1</TemplateBox>
-    <TemplateBox>Template 1</TemplateBox>
-    <TemplateBox>Template 1</TemplateBox>
-    <TemplateBox>Template 1</TemplateBox>
-  </GridContainer>
+  <div className={styles.gridContainer}>
+    <div className={styles.templateBox}>Template 1</div>
+    <div className={styles.templateBox}>Template 2</div>
+    <div className={styles.templateBox}>Template 3</div>
+    <div className={styles.templateBox}>Template 4</div>
+    <div className={styles.templateBox}>Template 5</div>
+    <div className={styles.templateBox}>Template 6</div>
+  </div>
 );
 
 export default TemplateGrid;

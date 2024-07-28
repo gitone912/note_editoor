@@ -1,32 +1,17 @@
-// pages/index.tsx
-
 import React from 'react';
-import styled from 'styled-components';
-import GlobalStyle from '../styles/globalStyles';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import TemplateGrid from '../components/TemplateGrid';
-
-const MainContainer = styled.div`
-  display: flex;
-`;
-
-const ContentContainer = styled.div`
-  flex-grow: 1;
-  background-color: #e7e7e7;
-`;
+import styles from '../styles/Home.module.css';
 
 const Home: React.FC = () => (
-  <>
-    <GlobalStyle />
-    <MainContainer>
-      <Sidebar />
-      <ContentContainer>
-        <Header />
-        <TemplateGrid />
-      </ContentContainer>
-    </MainContainer>
-  </>
+  <div className={styles.mainContainer}>
+    <Sidebar />
+    <div className={styles.contentContainer}>
+      <Header />
+      <TemplateGrid />
+    </div>
+  </div>
 );
 
 export default Home;

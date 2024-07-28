@@ -1,0 +1,34 @@
+/* styles/Sidebar.module.css */
+.sidebarContainer {
+    width: 200px;
+    background-color: #2e4a84;
+    height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logoImage {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebarItem {
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebarItem:hover {
+    background-color: #1f3563;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
